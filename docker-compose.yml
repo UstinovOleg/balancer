@@ -1,0 +1,8 @@
+version: "3"
+services:
+  balancer:
+    build: .
+    ports:
+      - "50051:50051"
+    environment:
+      - CDN_HOST=cdn.example.com
